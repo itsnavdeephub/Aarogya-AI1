@@ -77,7 +77,7 @@ fun ChatScreen(onNavigateToSecond: () -> Unit, onNavigateToInfo: () -> Unit) {
     val scope = rememberCoroutineScope()
 
     // Read Gemini API key from BuildConfig
-    val apiKey = "AIzaSyAXoVey8w02uzmUJUzf_GVDq9qh6TGK1oU" // Corrected to use BuildConfig
+    val apiKey = "replace your key there" // Corrected to use BuildConfig
     val api = remember { RetrofitClient.getInstance() }
     val context = LocalContext.current
     var tts: TextToSpeech? by remember { mutableStateOf(null) } // Android's TTS for fallback
