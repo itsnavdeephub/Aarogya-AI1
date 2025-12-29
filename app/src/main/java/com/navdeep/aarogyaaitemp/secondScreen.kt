@@ -94,7 +94,7 @@ fun SecondScreen(onNavigateToChat: () -> Unit, onNavigateToInfo: () -> Unit) {
     var loading by remember { mutableStateOf(false) }
 
     val context = LocalContext.current
-    val apiKey = "AIzaSyC9CynZT5GS3WkNpCL7x_1QlbfiZzr_4pM" // 🔑 replace with your real Google API key
+    val apiKey = "replace the map key there" // 🔑 replace with your real Google API key
 
     // ✅ States & districts from JSON
     var statesMap by remember { mutableStateOf<Map<String, List<String>>>(emptyMap()) }
